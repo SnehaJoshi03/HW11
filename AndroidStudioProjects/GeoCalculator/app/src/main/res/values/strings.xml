@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GeoCalculator</string>
+    <string name="title_activity_selection">Selection</string>
+    <string-array name = "dunits">
+        <item>Kilometers</item>
+        <item>Miles</item>
+    </string-array>>
+    <string name="title_activity1_selection">BearingSelection</string>
+    <string-array name = "bunits">
+        <item>Degrees</item>
+        <item>Mils</item>
+    </string-array>
+</resources>

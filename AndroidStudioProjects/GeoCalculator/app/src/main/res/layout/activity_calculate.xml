@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculate">
+
+    <EditText
+        android:id="@+id/latp1"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Enter latitude for p1"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <EditText
+        android:id="@+id/latp2"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="94dp"
+        android:ems="10"
+        android:hint="Enter latitude for p2"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <EditText
+        android:id="@+id/longp2"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/latp2"
+        android:layout_marginEnd="5dp"
+        android:ems="10"
+        android:hint="Enter longitude for p2"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <EditText
+        android:id="@+id/longp1"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/latp1"
+        android:ems="10"
+        android:hint="Enter longitude for p1"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <Button
+        android:id="@+id/calculatebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="167dp"
+        android:text="Calculate" />
+
+    <Button
+        android:id="@+id/clearbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/calculatebutton"
+        android:layout_marginEnd="26dp"
+        android:text="Clear" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/calculatebutton"
+        android:layout_marginTop="232dp"
+        android:text="Distance: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="274dp"
+        android:layout_marginStart="22dp"
+        android:text="Bearing: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <EditText
+        android:id="@+id/distance"
+        android:layout_width="183dp"
+        android:layout_height="59dp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-14dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/bearing"
+        android:layout_width="186dp"
+        android:layout_height="61dp"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="Settings" />
+
+</RelativeLayout>
